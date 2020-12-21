@@ -16,6 +16,7 @@ html, body {
     height: 100%;
     min-height: -webkit-fill-available;
     min-height: 100vh;
+
 }
 
 .background {
@@ -48,8 +49,8 @@ header span.slogan {
 
 
 /*NAV*/
-nav ul {
-    margin: 20px 0;
+nav {
+    margin: 35px 0;
 }
 
 nav ul li {
@@ -69,8 +70,8 @@ nav .button {
 }
 
 nav img {
-    width: 64px;
-    height: 64px;
+    width: 75px;
+    height: 75px;
     display: inline;
     padding: 1px;
 }
@@ -80,10 +81,10 @@ nav img {
 /*MAIN*/
 
 /*FOOTER*/
-footer{
+footer {
     background-color: #434343;
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     opacity: 0.8;
@@ -91,24 +92,37 @@ footer{
     text-align: center;
 }
 
-footer span{
+footer span {
     color: #FF7A00;
     display: block;
     margin-bottom: 17px;
 }
 
-footer img{
+footer a {
+    display: inline-block;
     margin-bottom: 25px;
+    margin-right: 40px;
 }
 
-div.footer-row{
+footer a:last-child {
+    margin-right: 0;
+}
+
+div.footer-row {
     color: white;
     background-color: #FF7A00;
     width: 100%;
     padding: 2px;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
 }
 /*FOOTER*/
+
+@media only screen and (min-width: 480px) {
+    nav img{
+        height: 90px;
+        width: 90px;
+    }
+}
