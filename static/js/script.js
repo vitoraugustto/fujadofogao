@@ -12,6 +12,7 @@ window.onload = function() {
     const spanDishes = document.getElementById('span-dishes');
     const spanCombos = document.getElementById('span-combos');
     const spanPromotions = document.getElementById('span-promotions');
+    const sectionBurger = document.getElementById('burger-main');
 
     [burgers, dishes, combos, promotions].forEach((icon) => 
         icon.addEventListener('click', function() {
@@ -29,6 +30,7 @@ window.onload = function() {
 
         burgers.addEventListener('click', function() {
             spanBurgers.style.opacity = '1';
+            sectionBurger.style.display = 'block';
 
             [spanDishes, spanCombos, spanPromotions].forEach((span) =>
             span.style.opacity = '0');

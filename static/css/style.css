@@ -17,6 +17,7 @@ body.preload * {
     position: relative;
     /*max-width: 1280px;*/
     margin: 0 auto;
+    padding-bottom: 180px;
     height: 100%;
     min-height: -webkit-fill-available;
     min-height: 100vh;
@@ -57,7 +58,7 @@ header span.slogan {
 
 /*NAV*/
 nav {
-    margin: 35px 0;
+    margin-top: 35px;
 }
 
 nav ul.menu {
@@ -126,13 +127,21 @@ nav img {
 
 /*MAIN*/
 main {
-    background-color: blue;
-    padding: 0 10px;
+    margin: 0 6px 10px 6px;
+    border-radius: 5px;
+}
+
+section#burger-main {
+    display: none;
+    max-width: 487px;
+    margin: 0 auto;
 }
 
 main div.box-wrapper {
-    max-width: 487px;
-    margin: 0 auto;
+    background-color: #2E2E2E;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 main div.img-wrapper {
@@ -140,28 +149,47 @@ main div.img-wrapper {
 }
 
 main img {
-    height: 256px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 3px;
 }
 
 main h3 {
     color: #FF7A00;
     display: inline-block;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0 3px;
 }
 
-main span {
+main span.price {
     color: #FF7A00;
+    background-color: black;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+
+main p {
+    color: #FF7A00;
+}
+
+main div.name-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
 }
 /*MAIN*/
 
 /*FOOTER*/
 footer {
-    background-color: #434343;
+    background-color: rgb(29, 29, 29);
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     opacity: 0.8;
     padding: 10px;
+    border-top: 1px solid #FF7A00;
     text-align: center;
 }
 
