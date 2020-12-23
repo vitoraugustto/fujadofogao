@@ -60,11 +60,49 @@ nav {
     margin: 35px 0;
 }
 
+nav ul.menu {
+    text-align: center;
+    padding: 0 5px;
+}
+
+nav ul.menu span#span-burgers {
+    display: inline-block;
+    opacity: 0;
+    color: #FF7A00;
+    width: 100%;
+}
+
+nav ul.menu span#span-dishes {
+    display: inline-block;
+    opacity: 0;
+    color: #FF7A00;
+    width: 100%;
+}
+
+nav ul.menu span#span-combos {
+    display: inline-block;
+    opacity: 0;
+    color: #FF7A00;
+    width: 100%;
+}
+
+nav ul.menu span#span-promotions {
+    display: inline-block;
+    opacity: 0;
+    color: #FF7A00;
+    width: 100%;
+}
+
 nav ul li {
     display: inline-block;
     text-align: center;
     width: 49%;
     margin-bottom: 30px;
+}
+
+
+nav ul li:last-child {
+    margin-right: 0px !important;
 }
 
 nav .button {
@@ -74,18 +112,45 @@ nav .button {
     text-align: center;
     vertical-align: middle;
     padding: 10px;
+    cursor: pointer;
     animation: contrastOut .1s ease-in-out forwards;
 }
 
 nav img {
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     display: inline;
     padding: 1px;
 }
 /*NAV*/
 
 /*MAIN*/
+main {
+    background-color: blue;
+    padding: 0 10px;
+}
+
+main div.box-wrapper {
+    max-width: 487px;
+    margin: 0 auto;
+}
+
+main div.img-wrapper {
+    text-align: center;
+}
+
+main img {
+    height: 256px;
+}
+
+main h3 {
+    color: #FF7A00;
+    display: inline-block;
+}
+
+main span {
+    color: #FF7A00;
+}
 /*MAIN*/
 
 /*FOOTER*/
@@ -153,10 +218,10 @@ div.footer-row {
 
 
 /*RESPONSIVE*/
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 400px) {
     nav img{
-        height: 90px;
-        width: 90px;
+        height: 70px;
+        width: 70px;
     }
 }
 /*RESPONSIVE*/
