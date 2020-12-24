@@ -131,7 +131,25 @@ main {
     border-radius: 5px;
 }
 
-section#burger-main {
+section#section-burgers {
+    display: none;
+    max-width: 487px;
+    margin: 0 auto;
+}
+
+section#section-dishes {
+    display: none;
+    max-width: 487px;
+    margin: 0 auto;
+}
+
+section#section-combos {
+    display: none;
+    max-width: 487px;
+    margin: 0 auto;
+}
+
+section#section-promotions {
     display: none;
     max-width: 487px;
     margin: 0 auto;
